@@ -26,8 +26,13 @@
         -webkit-print-color-adjust: exact;
       }
       @media print {
-        @page { margin: 0; size: A4; }
-        body { background-color: white; }
+        @page { 
+          margin: 0; 
+          size: A4 portrait; /* Force portrait mode */
+        }
+        body { 
+          background-color: white; 
+        }
         .no-print { display: none !important; }
         .print-break-inside-avoid { break-inside: avoid; }
         /* Ensure inputs look like text when printing */

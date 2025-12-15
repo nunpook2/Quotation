@@ -202,7 +202,8 @@ export const Quotation: React.FC = () => {
       </div>
 
       {/* A4 Paper Container */}
-      <div className="w-[210mm] min-h-[297mm] bg-white shadow-lg p-[15mm] relative box-border mx-auto print:shadow-none print:w-full print:p-0">
+      {/* UPDATE: Removed print:p-0 and print:w-full to keep original padding and width in print mode */}
+      <div className="w-[210mm] min-h-[297mm] bg-white shadow-lg p-[15mm] relative box-border mx-auto print:shadow-none print:w-[210mm] print:p-[15mm] print:m-0 print:overflow-visible">
         
         {/* Header Section */}
         <div className="flex gap-4 mb-6">
