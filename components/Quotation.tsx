@@ -213,11 +213,11 @@ export const Quotation: React.FC = () => {
           <div className="flex-1">
             <h1 className="text-xl font-bold">บริษัท อภิภู 951 เซอร์วิส แอนด์ ซัพพลาย จำกัด</h1>
             <p className="text-sm text-gray-700">124/43 หมู่ที่ 4 ตำบลบ้านฉาง อำเภอบ้านฉาง จังหวัดระยอง 21130</p>
-            <p className="text-sm text-gray-700">โทร : 0845653994 <span className="ml-4">อีเมล์ : message_limit@hotmail.com</span></p>
-            <div className="flex justify-between items-center mt-1">
-                <p className="text-sm text-gray-700">เลขประจำตัวผู้เสียภาษีอากร 0215565004045</p>
-                <p className="text-sm text-gray-700 text-right">(สำนักงานใหญ่)</p>
-            </div>
+            <p className="text-sm text-gray-700">
+              โทร : 0845653994 
+              <span className="ml-4">อีเมล์ : message_limit@hotmail.com</span>
+              <span className="ml-4">เลขประจำตัวผู้เสียภาษีอากร 0215565004045 (สำนักงานใหญ่)</span>
+            </p>
           </div>
         </div>
 
@@ -267,7 +267,7 @@ export const Quotation: React.FC = () => {
                 />
               </div>
               <div className="flex">
-                <span className="w-40 font-bold flex-shrink-0">เลขประจำตัวผู้เสียภาษีอากร</span>
+                <span className="w-48 font-bold flex-shrink-0 whitespace-nowrap">เลขประจำตัวผู้เสียภาษีอากร</span>
                 <input 
                   type="text" 
                   value={customer.taxId}
